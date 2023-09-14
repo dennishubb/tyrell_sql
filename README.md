@@ -38,9 +38,6 @@ Jobs.salary_range_remarks AS `Jobs__salary_range_remarks`,
 Jobs.restriction AS `Jobs__restriction`,
 Jobs.estimated_total_workers AS `Jobs__estimated_total_workers`,
 Jobs.remarks AS `Jobs__remarks`,
-
-Page 2/4
-
 Jobs.url AS `Jobs__url`,
 Jobs.seo_description AS `Jobs__seo_description`,
 Jobs.seo_keywords AS `Jobs__seo_keywords`,
@@ -89,8 +86,6 @@ ON (Tools.type = 1
 AND Tools.id = (JobsTools.affiliate_id)
 AND (Tools.deleted) IS NULL)
 LEFT JOIN jobs_career_paths JobsCareerPaths
-Page 3/4
-
 ON Jobs.id = (JobsCareerPaths.job_id)
 LEFT JOIN affiliates CareerPaths
 ON (CareerPaths.type = 3
