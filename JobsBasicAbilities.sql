@@ -1,3 +1,5 @@
+use TyrellSystems;
+
 CREATE TABLE JobsBasicAbilities (
     id bigint auto_increment,
     name varchar(255),
@@ -7,5 +9,6 @@ CREATE TABLE JobsBasicAbilities (
     created_by varchar(255),
     created tinyint,
     modified tinyint,
-    deleted tinyint
+    deleted tinyint,
+    PRIMARY KEY (id)
 );

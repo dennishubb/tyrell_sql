@@ -6,5 +6,6 @@ CREATE TABLE JobCategories (
     created_by varchar(255),
     created tinyint,
     modified tinyint,
-    deleted tinyint
+    deleted tinyint,
+    PRIMARY KEY (id)
 );
