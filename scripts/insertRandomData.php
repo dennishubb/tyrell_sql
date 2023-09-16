@@ -93,11 +93,11 @@
             'academic_degree_professional' => '',
             'academic_degree_bachelor' => '',
             'salary_statistic_group' => $categories[rand(0, count($categories) - 1)],
-            'salary_range_first_year' => rand(10000, 20000),
-            'salary_range_average' => rand (15000, 25000),
+            'salary_range_first_year' => '',
+            'salary_range_average' => '',
             'salary_range_remarks' => $categories[rand(0, count($categories) - 1)],
             'restriction' => '',
-            'estimated_total_workers' => rand(1, 100),
+            'estimated_total_workers' => '',
             'remarks' => $categories[rand(0, count($categories) - 1)],
             'url' => '',
             'seo_description' => '',
@@ -108,22 +108,22 @@
 
         $job_id = $db->insert('Jobs', $job);
 
-        $job_personality= Array('job_id', $job_id, 'personality_id' => $personality_ids[rand(0, count($personality_ids) - 1)]);
-        $db->insert('JobPersonalities', $job_personality);
+        $job_personality = Array('job_id', $job_id, 'personality_id' => $personality_ids[rand(0, count($personality_ids) - 1)]);
+        $db->insert('JobsPersonalities', $job_personality);
 
         $job_practical_skill = Array('job_id', $job_id, 'practical_skill_id' => $practicalskill_ids[rand(0, count($practicalskill_ids) - 1)]);
-        $db->insert('JobPracticalSkills', $job_practical_skill);
+        $db->insert('JobsPracticalSkills', $job_practical_skill);
 
         $job_basic_ability = Array('job_id', $job_id, 'basic_ability_id' => $basicability_ids[rand(0, count($basicability_ids) - 1)]);
-        $db->insert('JobBasicAbilities', $job_basic_ability);
+        $db->insert('JobsBasicAbilities', $job_basic_ability);
 
         $job_tool = Array('job_id', $job_id, 'affiliate_id' => $tool_ids[rand(0, count($tool_ids) - 1)]);
-        $db->insert('JobTools', $job_tool);
+        $db->insert('JobsTools', $job_tool);
 
         $job_career_path = Array('job_id', $job_id, 'affiliate_id' => $careerpath_ids[rand(0, count($careerpath_ids) - 1)]);
-        $db->insert('JobTools', $job_career_path);
+        $db->insert('JobsCareerPaths', $job_career_path);
 
         $job_rec_qualification = Array('job_id', $job_id, 'affiliate_id' => $recqualification_ids[rand(0, count($recqualification_ids) - 1)]);
-        $db->insert('JobRecQualifications', $job_rec_qualification);
+        $db->insert('JobsRecQualifications', $job_rec_qualification);
     }
 ?>
