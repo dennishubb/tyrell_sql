@@ -3,7 +3,7 @@ use TyrellSystems;
 CREATE TABLE RecQualifications (
     id bigint auto_increment,
     name varchar(255),
-    personality_id bigint,
+    type tinyint
     deleted tinyint,
     PRIMARY KEY (id)
 );
