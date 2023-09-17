@@ -1,6 +1,6 @@
 use TyrellSystems;
 
-CREATE TABLE PracticalSkills (
+CREATE TABLE practical_skills (
     id bigint auto_increment,
     name varchar(255),
     deleted tinyint,
