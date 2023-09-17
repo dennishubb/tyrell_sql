@@ -1,6 +1,6 @@
 use TyrellSystems;
 
-CREATE TABLE JobsTools (
+CREATE TABLE jobs_tools (
     id bigint auto_increment,
     name varchar(255),
     job_id bigint,
