@@ -1,5 +1,5 @@
 use TyrellSystems;
-CREATE TABLE BasicAbilities (
+CREATE TABLE basic_abilities (
     id bigint auto_increment,
     name varchar(255),
     deleted tinyint,

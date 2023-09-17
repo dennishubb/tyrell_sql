@@ -1,5 +1,5 @@
 use TyrellSystems;
-CREATE TABLE CareerPaths (
+CREATE TABLE career_paths (
     id bigint auto_increment,
     name varchar(255),
     type tinyint,

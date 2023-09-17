@@ -1,7 +1,10 @@
 use TyrellSystems;
-CREATE TABLE JobCategories (
+
+CREATE TABLE jobs_rec_qualifications (
     id bigint auto_increment,
     name varchar(255),
+    job_id bigint,
+    affiliate_id bigint,
     sort_order int,
     created_by varchar(255),
     created tinyint,

@@ -1,6 +1,6 @@
 use TyrellSystems;
 
-CREATE TABLE Jobs (
+CREATE TABLE jobs (
     id bigint auto_increment,
     name varchar(255),
     media_id bigint,
